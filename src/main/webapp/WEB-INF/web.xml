@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!--          -->
+    <!--APP PARAMS-->
+    <!--          -->
+    
+    <!--Database-->
+  <context-param>
+    <param-name>configurationFile</param-name>
+    <param-value>ericPc.xml</param-value>
+  </context-param>
+	    
+	<!--                -->
+	<!--CONTEXT LISTENER-->
+	<!--                --> 
+    
+  <listener>
+  		<listener-class>fr.pfgen.cgh.server.servlets.CghContextListener</listener-class>
+  </listener>
+  
+	<!--            -->
+	<!--RPC SERVICES-->
+	<!--            -->
+	
+	
+  <servlet>
+    <servlet-name>UserService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.UserServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserService</servlet-name>
+    <url-pattern>/cgh/UserService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>ArrayService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.ArrayServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ArrayService</servlet-name>
+    <url-pattern>/cgh/ArrayService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>FrameService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.FrameServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FrameService</servlet-name>
+    <url-pattern>/cgh/FrameService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>DetectionService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.DetectionServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DetectionService</servlet-name>
+    <url-pattern>/cgh/DetectionService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>ProjectService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.ProjectServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProjectService</servlet-name>
+    <url-pattern>/cgh/ProjectService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>AnalysisService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.AnalysisServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AnalysisService</servlet-name>
+    <url-pattern>/cgh/AnalysisService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+	
+  <servlet>
+    <servlet-name>TeamService</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.services.TeamServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TeamService</servlet-name>
+    <url-pattern>/cgh/TeamService</url-pattern>
+  </servlet-mapping>
+  
+	<!-- -->
+
+	
+	
+    <!--        -->
+    <!--SERVLETS-->
+    <!--        -->
+  
+  <servlet>
+    <servlet-name>imageProvider</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.servlets.ImageProviderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>imageProvider</servlet-name>
+  	<url-pattern>/cgh/imageProvider</url-pattern>
+  </servlet-mapping>
+  
+ 	 <!-- -->
+ 	 
+  <servlet>
+    <servlet-name>fileProvider</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.servlets.FileProviderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fileProvider</servlet-name>
+  	<url-pattern>/cgh/fileProvider</url-pattern>
+  </servlet-mapping>
+  
+ 	 <!-- -->
+ 	 
+  <servlet>
+    <servlet-name>fileUploader</servlet-name>
+    <servlet-class>fr.pfgen.cgh.server.servlets.FileUploaderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fileUploader</servlet-name>
+  	<url-pattern>/cgh/fileUploader</url-pattern>
+  </servlet-mapping>
+  
+  	 <!-- -->
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Cgh.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

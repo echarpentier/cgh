@@ -1,0 +1,104 @@
+/** Add css rules here for your application. */
+
+/*text*/
+.textTitle {
+	background-color:white; color:black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 12px;
+}
+
+.lineSeparator {
+    border-bottom: 2px solid gray;
+}
+
+/*loading animation*/
+#loading {
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  margin-left: -45px;
+  padding: 2px;
+  z-index: 20001;
+  height: auto;
+  border: 1px solid #ccc;	
+}
+
+#loading a {
+  color: #225588;	
+}
+
+#loading .loading-indicator {
+  background: white;
+  color: #444;
+  font: bold 13px tahoma, arial, helvetica;
+  padding: 10px;
+  margin: 0;
+  height: auto;	
+}
+
+#loading .loading-indicator img {
+  margin-right: 8px;
+  float: left;
+  vertical-align: top;)
+}
+
+#loading-msg {
+  font: normal 10px arial, tahoma, sans-sherif;	
+}
+
+/*link-like style*/
+.clickable {
+  color: blue;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration:underline;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.EC_TabTitle {
+  background-color:white; color:black;
+  font-weight: bold;
+  
+  text-align: center;
+  text-decoration:underline;
+  font-size: 30px;
+}
+
+.EC_TabSubTitle {
+  background-color:white; color:black;
+  font-weight: bold;
+  
+  text-align: center;
+  font-size: 20px;
+}
+
+table.EC_table {
+	border-width: 2px;
+	border-spacing: 0px;
+	border-style: solid;
+	border-color: black;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.EC_table th {
+	border-width: 1px;
+	padding: 3px;
+	border-style: solid;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.EC_table td {
+	border-width: 1px;
+	padding: 3px;
+	border-style: solid;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+
+.EC_pointer { 
+	cursor: pointer; 
+}
